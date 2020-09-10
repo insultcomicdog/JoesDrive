@@ -40,8 +40,8 @@
 #define rBut1PIN      6
 #define rBut2PIN      5
 #define rBut3PIN      9
-#define Joy3XPIN      A2
-#define Joy4XPIN      A3
+#define Joy3XPIN      A3
+#define Joy4XPIN      A2
 #define dataDelay     0
 #define sendDelay     20
 #define recDelay      2
@@ -76,7 +76,7 @@ SSD1306AsciiWire oled;
 #endif
 
 //Match frequency to the hardware version of the radio on your Feather
-#define FREQUENCY     RF69_915MHZ
+#define FREQUENCY     RF69_433MHZ
 #define IS_RFM69HCW   true // set to 'true' if you are using an RFM69HCW module
 
 //*********************************************************************************************
