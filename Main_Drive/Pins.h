@@ -70,10 +70,10 @@
 #define domeSpinPotPin A4     // Pin used to monitor dome spin potentiometer
 #define battMonitor A3        // Pin used to monitor battery voltage
 #define outputVoltage 5.2     // This is the output voltage from the Buck Converter powering the arduino
-#define drivePWM1 12          // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
-#define drivePWM2 13          // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
-#define s2sPWM1 6             // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
-#define s2sPWM2 7             // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
+#define drivePWM1 13          // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
+#define drivePWM2 12          // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
+#define s2sPWM1 7             // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
+#define s2sPWM2 6             // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
 #define maxS2STilt 20         // max tilt using the joystick; max is 25
 #define domeSpinPWM1 10       // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
 #define domeSpinPWM2 11       // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
