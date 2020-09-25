@@ -47,7 +47,7 @@
 #define recDelay      2
 
 // Naigon - Uncomment this line to debug the values the remote is sending across the wire.
-// #define debug
+//#define debug
 
 #include <EEPROMex.h>
 #include "Arduino.h"
@@ -424,11 +424,11 @@ void centerChannels()
     }
     else if (Joy3Xa > Joy3XCenter)
     {
-        Joy3Xb = map(Joy3Xa, Joy3XCenter, PSPHigh, 255, 0);
+        Joy3Xb = map(Joy3Xa, Joy3XCenter, JoyHigh, 255, 0);
     }
     else if (Joy3Xa < Joy3XCenter)
     {
-        Joy3Xb = map(Joy3Xa, PSPLow, Joy3XCenter, 512, 257);
+        Joy3Xb = map(Joy3Xa, JoyLow, Joy3XCenter, 512, 257);
     }
   
     if (Joy4Xa == Joy4XCenter)
@@ -437,11 +437,11 @@ void centerChannels()
     }
     else if (Joy4Xa > Joy4XCenter)
     {
-        Joy4Xb = map(Joy4Xa, Joy4XCenter, PSPHigh, 255, 0);
+        Joy4Xb = map(Joy4Xa, Joy4XCenter, JoyHigh, 255, 0);
     }
     else if (Joy4Xa < Joy4XCenter)
     {
-        Joy4Xb = map(Joy4Xa, PSPLow, Joy4XCenter, 512, 257);
+        Joy4Xb = map(Joy4Xa, JoyLow, Joy4XCenter, 512, 257);
     }
 
     Joy1X = constrain(Joy1Xb, 0, 512);
