@@ -41,7 +41,7 @@
 #define DOME_ADDRESS 3   // The recipient of packets
 #define DRIVE_ADDRESS 4
 
-#define FREQUENCY RF69_915MHZ // THIS NEEDS TO MATCH YOUR FEATHER
+#define FREQUENCY RF69_433MHZ // THIS NEEDS TO MATCH YOUR FEATHER
 
 #define IS_RFM69HCW true // set to 'true' if you are using an RFM69HCW module
 
@@ -549,4 +549,3 @@ void battLevel()
 }
 
 //==============    
-
