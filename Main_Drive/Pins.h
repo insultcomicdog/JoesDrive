@@ -65,15 +65,15 @@
 #define enablePin 29          // Pin that provides power to motor driver enable pins
 #define enablePinDome 33      // Pin that provides power to Dome motor driver enable pin
 #define S2SpotPin A0          // Pin connected to side tilt potentiometer 
-#define ACTpin 35             // Pin connected to ACT on soundboard
+#define ACTpin 34             // Pin connected to ACT on soundboard
 #define fadePin A2            // Connected to + of one channel on sound board(use resistor to ground)
 #define domeSpinPotPin A4     // Pin used to monitor dome spin potentiometer
 #define battMonitor A3        // Pin used to monitor battery voltage
 #define outputVoltage 5.2     // This is the output voltage from the Buck Converter powering the arduino
-#define drivePWM1 12          // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
-#define drivePWM2 13          // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
-#define s2sPWM1 6             // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
-#define s2sPWM2 7             // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
+#define drivePWM1 13          // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
+#define drivePWM2 12          // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
+#define s2sPWM1 7             // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
+#define s2sPWM2 6             // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
 #define domeSpinPWM1 10       // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
 #define domeSpinPWM2 11       // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed
 #define flywheelSpinPWM1 8    // PWM Pin for movement, swap the pin numbers on this axis if axis is reversed 

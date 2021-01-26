@@ -30,12 +30,12 @@
 
 #else
 
-#define reverseDrive        false
+#define reverseDrive        true
 #define reverseDomeTiltFR   false
 #define reverseDomeTiltLR   true
-#define reverseS2S          true
+#define reverseS2S          false
 #define reverseDomeSpin     true
-#define reverseFlywheel     false
+#define reverseFlywheel     true
 #define reversePitch        false
 #define reverseRoll         false
 #define reverseDomeTiltPot  true
