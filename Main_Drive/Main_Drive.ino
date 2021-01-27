@@ -1303,9 +1303,7 @@ void domeTiltMK3(IEaseApplicator *easeApplicatorFRPtr, IEaseApplicator *easeAppl
     // amount, the left and right will blow by their end stops. This is the code the ensures the Y moves a bit the
     // first time.
     //
-    if(!drive.HasDomeMoved
-        && joyY <= 2.0 && joyY >= -2.0
-        && (joyX > 2.0 ||  joyX < -2.0))
+    if(!drive.HasDomeMoved && joyY <= 2.0 && joyY >= -2.0)
     {
         joyY = 2.0;
     }
@@ -1359,7 +1357,7 @@ void domeTiltMK3(IEaseApplicator *easeApplicatorFRPtr, IEaseApplicator *easeAppl
         servoLeft = joy2Ya;
     }
    
-    leftServo.write(constrain(map(servoLeft, -90, 90, 0, 180),0, 180) + 5, domeSpeed, false); 
+    leftServo.write(constrain(map(servoLeft, -90, 90, 0, 180), 0, 180), domeSpeed, false); 
     rightServo.write(constrain(map(servoRight,-90, 90, 180, 0), 0, 180), domeSpeed, false);
 }
 #endif
